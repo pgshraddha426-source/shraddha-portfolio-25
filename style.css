@@ -1,0 +1,223 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #060b08;
+}
+
+header {
+  background: #000835;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+
+nav {
+  background: #34495e;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+section {
+  padding: 30px;
+  background: white;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #2c3e50;
+  color: white;
+}
+
+.card {
+  background: rgb(251, 251, 251);
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-box {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 14px;
+  margin-top: 20px;
+  border-left: 5px solid #2563eb;
+  transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+skill-card {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(37,99,235,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #2563eb;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(37,99,235,0.3);
+}
+
+skill-card h4 {
+  margin: 0;
+  color: #1e40af;
+  font-size: 18px;
+}
+
+.skill-card p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.footer {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e5e7eb;
+  padding: 40px 20px;
+  margin-top: 80px;
+}
+
+.contact-section {
+  width: 80%;
+  margin: 60px auto 30px;
+}
+
+.contact-section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+.contact-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(37,99,235,0.2);
+  border-left: 6px solid #2563eb;
+}
+
+.contact-card p {
+  font-size: 15px;
+  margin: 12px 0;
+}
+
+.contact-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-card a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #0f172a;
+  color: #e5e7eb;
+  text-align: center;
+  padding: 18px 10px;
+  font-size: 13px;
+  margin-top: 40px;
+}
+
+#education, #contact, #resume {
+  margin: 40px 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1f2933;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.btn:hover {
+  background: #111827;
+}
+
+
+#education {
+    padding: 20px 0;
+}
+
+#education ul {
+    list-style: none; /* Removes the default dots */
+    padding: 0;
+}
+
+#education li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    border-left: 3px solid #3498db; /* Adds a vertical timeline line */
+    transition: all 0.3s ease;
+}
+
+#education li:hover {
+    border-left: 3px solid #2ecc71; /* Changes color on hover */
+    padding-left: 30px; /* Slight animation effect */
+}
+
+/* Styling the Degree Name (Strong tag) */
+#education li strong {
+    display: block;
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Styling the Institution and Location */
+#education li {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Styling the Dates */
+/* This assumes your dates follow the </strong> tag */
+#education li br + text { 
+    font-weight: bold;
+    color: #3498db;
+}
